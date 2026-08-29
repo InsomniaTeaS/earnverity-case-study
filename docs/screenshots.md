@@ -18,6 +18,8 @@ The later homepage uses a simpler layout with clearer navigation, category brows
 
 I checked long platform pages on a phone-sized layout to make sure detailed information stayed readable and usable on smaller screens.
 
+![EarnVerity Fanatics page on mobile](../assets/mobile-fanatics-page.jpg)
+
 ## Deployment QA
 
 I also checked Cloudflare deployments after changes and worked through failed builds before treating an update as complete.
