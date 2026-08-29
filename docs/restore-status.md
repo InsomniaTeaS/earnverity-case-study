@@ -1,1 +1,0 @@
-Restoring screenshot assets from the original captures. No screenshots should be cropped or stretched.
