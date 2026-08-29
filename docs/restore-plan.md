@@ -1,1 +1,0 @@
-The screenshot assets are being replaced with full-frame copies made from the original captures. Aspect ratios are preserved and no image is intentionally cropped.
