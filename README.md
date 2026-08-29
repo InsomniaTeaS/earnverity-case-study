@@ -58,6 +58,12 @@ I tested pages across different screen sizes and checked common user actions suc
 
 I also checked production changes after deployment to make sure fixes worked on the live site.
 
+## Development examples
+
+I added a few examples from the real development history so this repository shows more than the finished website. They include fixing broken routes, cleaning up repeated content, correcting review-date logic, and adding broader site-integrity checks.
+
+[View development examples](docs/development-examples.md)
+
 ## Tools used
 
 - HTML
