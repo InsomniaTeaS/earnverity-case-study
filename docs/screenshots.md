@@ -12,6 +12,8 @@ The search controls and category links were running together in an early version
 
 The later homepage uses a simpler layout with clearer navigation, category browsing, and calls to action.
 
+![Current EarnVerity homepage](../assets/current-homepage.jpg)
+
 ## Mobile platform page testing
 
 I checked long platform pages on a phone-sized layout to make sure detailed information stayed readable and usable on smaller screens.
