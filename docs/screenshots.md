@@ -1,6 +1,6 @@
 # Screenshots
 
-I am keeping this page for real EarnVerity development screenshots, but I removed the current image embeds because the recovered copies were too low-resolution or did not render correctly on GitHub.
+These are real EarnVerity development screenshots. I am only adding images here when I have a clear original capture instead of a compressed thumbnail.
 
 ## Early homepage layout issue
 
@@ -9,6 +9,8 @@ The search controls and category links were running together in an early version
 ## Current homepage
 
 The later homepage uses a cleaner hero section, clearer navigation, and a simpler category-browsing layout. I changed the page so users can understand what EarnVerity does faster and start browsing without digging through too much repeated content.
+
+![Current EarnVerity homepage](../assets/current-homepage-hd.jpg)
 
 ## Mobile platform page testing
 
@@ -32,4 +34,4 @@ Because platform pages can contain a lot of information, I checked spacing, text
 
 I also checked Cloudflare deployments after changes and worked through failed builds before treating an update as complete.
 
-Full-resolution screenshots will be added here from the original captures rather than using compressed thumbnails.
+I am leaving the early-layout, mobile, and deployment screenshots out for now because the copies I recovered are low-resolution thumbnails. I will only add those once I have usable original captures.
