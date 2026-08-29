@@ -12,7 +12,7 @@ The search controls and category links were running together in an early version
 
 The later homepage uses a cleaner hero section, clearer navigation, and a simpler category-browsing layout. I changed the page so users can understand what EarnVerity does faster and start browsing without digging through too much repeated content.
 
-![Current EarnVerity homepage](../assets/current-homepage.jpg)
+![Current EarnVerity homepage](../assets/current-homepage.png)
 
 ## Mobile platform page testing
 
