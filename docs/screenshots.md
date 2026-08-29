@@ -40,5 +40,3 @@ My normal check was:
 4. Open the deployed page and test the change instead of relying only on the build status.
 5. If something failed, fix it and deploy again.
 6. Treat the change as finished only after the deployed version worked as expected.
-
-Because the deployment screenshot copy I recovered was low quality, I am leaving it out until I have a better original capture.
