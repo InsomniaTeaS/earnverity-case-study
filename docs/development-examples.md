@@ -2,6 +2,12 @@
 
 These are a few examples from the actual EarnVerity development history. I included them because they show the kind of work that went into the site beyond the final page design.
 
+## Screenshot examples
+
+I also kept a few screenshots from the development and testing process. They include an early homepage layout problem, the cleaned-up homepage, mobile testing on a long platform page, and Cloudflare deployment checks.
+
+[View screenshot examples](screenshots.md)
+
 ## Fixing broken guide pages
 
 Two guide pages were returning internal errors. I replaced the broken records with valid comparison-page records and checked that all ten pages in the batch returned HTTP 200 after the fix.
