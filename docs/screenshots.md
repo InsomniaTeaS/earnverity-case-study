@@ -32,6 +32,17 @@ Because platform pages can contain a lot of information, I checked spacing, text
 
 ## Deployment QA
 
-I also checked Cloudflare deployments after changes and worked through failed builds before treating an update as complete.
+I used Cloudflare preview deployments to check changes before treating them as finished. When a build failed, I checked the failed deployment, fixed the problem, and ran the deployment again instead of assuming the change worked locally.
+
+My normal check was:
+
+- make the change in GitHub
+- wait for the Cloudflare preview build
+- check whether the build passed or failed
+- open the deployed version and test the affected page
+- fix any issue and deploy again if needed
+- only treat the update as complete after the deployed version worked
+
+This helped catch problems that were not always obvious while editing the site.
 
 I am leaving the early-layout, mobile, and deployment screenshots out for now because the copies I recovered are low-resolution thumbnails. I will only add those once I have usable original captures.
