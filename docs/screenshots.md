@@ -2,24 +2,25 @@
 
 These are real EarnVerity development screenshots. I am only adding images here when I have a clear original capture instead of a compressed thumbnail.
 
-## Early homepage layout issue
+## Previous homepage
 
-An early version of the homepage had layout problems where the search controls and category links were running together. This was one of the UI issues I cleaned up while improving the homepage structure and readability.
+This older homepage was built around the directory itself. The search bar was the main action, the page showed the number of listings near the top, and recent verification checks and referral information appeared directly in the opening section.
 
-Main fixes:
-
-- separated crowded search and category controls
-- improved spacing and alignment
-- cleaned up the hero area
-- made the page easier to scan
-
-I removed the old screenshot because the recovered copy was cut off and not clear enough to use in the case study.
+![Previous EarnVerity homepage](../assets/previous-homepage.png)
 
 ## Current homepage
 
-The later homepage uses a cleaner hero section, clearer navigation, and a simpler category-browsing layout. I changed the page so users can understand what EarnVerity does faster and start browsing without digging through too much repeated content.
+The current homepage is more focused on explaining what EarnVerity does first, then helping users choose where to start. I simplified the opening section, made the navigation clearer, and moved category browsing into a more organized panel instead of putting most of the directory controls into the hero.
 
 ![Current EarnVerity homepage](../assets/current-homepage.png)
+
+### What changed
+
+- moved away from a search-first homepage
+- made the purpose of the site clearer before showing directory controls
+- simplified the hero and reduced crowded information near the top
+- made category browsing easier to scan
+- cleaned up navigation and spacing
 
 ## Mobile platform page testing
 
