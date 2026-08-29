@@ -2,9 +2,11 @@
 
 These are a few examples from the actual EarnVerity development history. I included them because they show the kind of work that went into the site beyond the final page design.
 
+The production repository is private, so this public case study summarizes the work without exposing private source files or internal links.
+
 ## Screenshot examples
 
-I also kept a few screenshots from the development and testing process. They include an early homepage layout problem, the cleaned-up homepage, mobile testing on a long platform page, and Cloudflare deployment checks.
+I kept clear screenshots from the development and testing process when an original capture was available. The current set includes a previous homepage and the later homepage so the design changes can be compared directly.
 
 [View screenshot examples](screenshots.md)
 
@@ -12,36 +14,47 @@ I also kept a few screenshots from the development and testing process. They inc
 
 Two guide pages were returning internal errors. I replaced the broken records with valid comparison-page records and checked that all ten pages in the batch returned HTTP 200 after the fix.
 
-The same update also refreshed several existing pages using Search Console data instead of creating more pages just for traffic.
+The same update also refreshed several existing pages using Search Console data instead of creating more pages only to target traffic.
 
-[View PR #246](https://github.com/InsomniaTeaS/EarnVerity/pull/246)
+What I checked:
 
-## Cleaning up repeated and robotic copy
+- repaired the two failing guide routes
+- verified all ten target pages returned HTTP 200
+- kept the existing URLs instead of creating duplicate replacement pages
+- used existing Search Console opportunities to decide which pages were worth improving
+
+## Cleaning up repeated site copy
 
 As the site grew, some pages started repeating the same explanations and using wording that sounded more like internal notes than normal website copy.
 
-I went through the shared content and removed repeated sections, simplified user-facing wording, fixed duplicate sportsbook summaries, and cleaned up stale review-date text without changing the main URLs or referral destinations.
+I went through shared content and page-specific text to remove repeated sections, simplify user-facing wording, fix duplicate sportsbook summaries, and clean up stale review-date text without changing the main URLs or referral destinations.
 
-[View PR #268](https://github.com/InsomniaTeaS/EarnVerity/pull/268)
+This was mainly a content QA pass, but it also required checking shared templates because one repeated block could affect many pages at once.
 
 ## Making review dates more accurate
 
-A shared update was causing some pages to look newly reviewed even when only shared code had changed. I changed the logic so pages only show a review date when that page actually has its own review date.
+A shared update was causing some pages to look newly reviewed even when only shared code had changed. I changed the logic so a page shows its own review date instead of inheriting a newer date just because shared site code was updated.
 
-This was a small detail, but it mattered because EarnVerity is supposed to make it clear when information was checked.
-
-[View PR #269](https://github.com/InsomniaTeaS/EarnVerity/pull/269)
+This mattered because verification dates are supposed to tell the visitor when that specific information was checked.
 
 ## Adding full site-integrity checks
 
-I added a validation step that checks every sitemap page and the internal links found across those pages. The check makes sure canonical pages return correctly, links do not lead to broken destinations, and redirects stay on the correct EarnVerity domain.
+I added a validation step for the sitemap and internal links across the site. The check runs during the normal build and looks for problems before a production update.
 
-This runs as part of the normal build so broken internal routes can be caught before a production update.
+It checks for things such as:
 
-[View PR #272](https://github.com/InsomniaTeaS/EarnVerity/pull/272)
+- sitemap URLs using the correct canonical origin
+- duplicate, query-string, and hash URLs in the sitemap
+- pages returning HTTP 200
+- canonical tags matching the page being checked
+- internal links reaching valid destinations
+- redirects staying on the expected EarnVerity domain
+- broken one-hop redirects
+
+This turned several manual checks into a repeatable build step.
 
 ## Deployment checks
 
 For production changes, I used GitHub pull requests and Cloudflare preview deployments to check the exact version before merging it into the live site.
 
-This made it easier to catch problems on a preview build before they reached production.
+My normal flow was to make the change, wait for the preview build, confirm the build result, test the deployed page itself, fix anything that failed, and only treat the work as complete after the deployed version behaved correctly.
