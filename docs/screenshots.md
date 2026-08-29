@@ -1,10 +1,12 @@
 # Screenshots
 
-This page will hold screenshots from the actual EarnVerity development and testing process.
+These are screenshots from the actual EarnVerity development and testing process.
 
 ## Early homepage layout issue
 
 The search controls and category links were running together in an early version of the homepage. I used this as one of the layout issues to clean up.
+
+![Early EarnVerity homepage layout issue](../assets/early-homepage-layout.jpg)
 
 ## Current homepage
 
