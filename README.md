@@ -1,16 +1,16 @@
 # EarnVerity Case Study
 
-EarnVerity is a website I built to make it easier to compare apps and websites that offer ways to earn or save money. It organizes information such as eligibility, payout timing, fees, categories, restrictions, and disclosures so users can compare options without opening a long list of separate sources.
+EarnVerity is a website I built to compare apps and websites that offer ways to earn or save money. It includes information like eligibility, payout timing, fees, categories, restrictions, and disclosures.
 
-This public repository is a case study of the project. The production source code is private, so this repo focuses on the decisions, testing, QA work, and changes I made while building and maintaining the site.
+This repo is a public case study of the project. The main source code is private, so this repo focuses on the changes, testing, and fixes I worked on.
 
 **Live site:** [earnverity.com](https://earnverity.com)
 
-**Project evidence:** [Screenshot comparison](docs/screenshots.md) | [Development examples](docs/development-examples.md)
+**More details:** [Screenshots](docs/screenshots.md) | [Development examples](docs/development-examples.md)
 
-## Homepage redesign
+## Homepage changes
 
-The homepage changed as I learned more about how the site was being used. An older version put search, listing counts, verification checks, and directory information directly into the opening section. The current version explains the purpose of the site first and gives users a cleaner way to choose where to start.
+The homepage changed a lot over time. The older version put search, listing counts, and other directory information near the top. The current version is simpler and explains the site first before showing where to browse.
 
 ### Previous homepage
 
@@ -20,70 +20,49 @@ The homepage changed as I learned more about how the site was being used. An old
 
 ![Current EarnVerity homepage](assets/current-homepage.png)
 
-The redesign was not only visual. I reduced crowded information near the top, made the purpose of the site clearer, simplified navigation, and moved category browsing into a more organized structure.
+Main changes:
 
-[See the full screenshot notes](docs/screenshots.md)
+- less crowded opening section
+- clearer navigation
+- simpler category browsing
+- better spacing and readability
 
 ## What I worked on
 
-- Built and maintained a mobile-friendly directory for earning, saving, finance, and related platforms.
-- Organized platform information into structured fields so listings are easier to compare.
-- Added search, filters, saved listings, dark mode, availability information, and platform detail pages.
-- Improved navigation and page layout across desktop and mobile.
-- Added SEO and indexing tools for individual platform and guide pages.
-- Added validation checks for broken routes, canonical URLs, sitemap entries, redirects, and internal links.
+- built and maintained the directory
+- organized platform information into consistent fields
+- added search, filters, saved listings, dark mode, availability info, and detail pages
+- improved desktop and mobile layouts
+- worked on SEO and indexing
+- added checks for broken routes, links, redirects, and sitemap pages
 
-## Data and quality checks
+## Data and QA
 
-A large part of the project has been keeping the information organized and consistent. I regularly checked the site for:
+I regularly checked for outdated information, duplicate records, broken links, missing details, inconsistent labels, mobile layout issues, and other page problems.
 
-- outdated or inconsistent information
-- duplicate records
-- broken or incorrect links
-- missing platform details
-- inconsistent labels and categories
-- mobile layout problems
-- unclear buttons or page states
-- pages that looked recently reviewed when only shared code had changed
+When I found something wrong, I updated the data, content, or page logic instead of only changing the design.
 
-When I found issues, I corrected the data, content, or page logic instead of only changing the visual design.
+## Research
 
-## Site improvements
+Before adding or updating a platform, I checked official pages for things like payout details, eligibility, fees, availability, and restrictions.
 
-As the site grew, some pages became too long and repeated the same information. I reviewed the existing content and simplified parts of the site so users could get to useful information faster.
-
-Some changes included:
-
-- shortening repeated homepage content
-- reorganizing navigation into clearer sections
-- making platform information easier to scan
-- improving contrast and readability
-- fixing responsive layout problems
-- cleaning up duplicated or outdated content
-- making review dates more page-specific
-- adding broader build-time integrity checks
-
-## Research and verification
-
-I checked information before adding or updating a platform. This included reviewing official pages, payout details, eligibility rules, fees, availability, and other restrictions when available.
-
-For newer platforms, I sometimes contacted the company directly to clarify details instead of presenting uncertain information as verified.
+For some newer platforms, I contacted the company directly when I could not confirm something from public information.
 
 ## Testing and deployment
 
-I tested pages across different screen sizes and checked common user actions such as searching, filtering, opening detail pages, saving listings, following external links, switching themes, and using long pages on mobile layouts.
+I tested search, filters, detail pages, saved listings, links, dark mode, and mobile layouts.
 
-For production changes, I used GitHub pull requests and Cloudflare preview deployments, tested the deployed version, fixed failures when needed, and treated the work as finished only after the deployed page behaved as expected.
+For larger changes, I used GitHub pull requests and Cloudflare preview deployments before the update went live.
 
 ## Development examples
 
-The public development notes include examples of:
+A few real examples are included in this repo:
 
-- fixing broken guide pages and checking the affected URLs returned HTTP 200
-- cleaning up repeated and internal-sounding copy
-- correcting review-date logic
-- adding sitemap and internal-link integrity checks to the build
-- checking Cloudflare preview deployments before production
+- fixing broken guide pages
+- cleaning up repeated content
+- fixing review-date logic
+- adding sitemap and internal-link checks
+- checking Cloudflare deployments
 
 [View development examples](docs/development-examples.md)
 
@@ -101,4 +80,4 @@ The public development notes include examples of:
 
 ## What I learned
 
-This project gave me more experience with web development, structured data, QA, debugging, responsive design, deployment checks, and maintaining a live website over time. It also showed me that keeping information accurate, testable, and easy to understand can take as much work as building the interface itself.
+This project gave me more practice with web development, QA, debugging, responsive design, and maintaining a live website.
