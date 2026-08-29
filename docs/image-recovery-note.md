@@ -1,1 +1,0 @@
-Screenshot files are being restored from the original captures without cropping or forced resizing.
