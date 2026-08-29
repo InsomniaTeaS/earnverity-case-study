@@ -4,9 +4,16 @@ These are real EarnVerity development screenshots. I am only adding images here 
 
 ## Early homepage layout issue
 
-The search controls and category links were running together in an early version of the homepage. I used this as one of the layout issues to clean up.
+An early version of the homepage had layout problems where the search controls and category links were running together. This was one of the UI issues I cleaned up while improving the homepage structure and readability.
 
-![Early EarnVerity homepage layout issue](../assets/early-homepage.jpg)
+Main fixes:
+
+- separated crowded search and category controls
+- improved spacing and alignment
+- cleaned up the hero area
+- made the page easier to scan
+
+I removed the old screenshot because the recovered copy was cut off and not clear enough to use in the case study.
 
 ## Current homepage
 
